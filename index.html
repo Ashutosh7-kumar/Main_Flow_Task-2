@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWIKIN</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .FirstSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }	
+    .FirstSection > div{
+        width: 30%;
+    }
+    .leftSection{
+        font-size: 2rem;
+    }
+    .leftSection .buttons{
+        padding: 50px 0;
+    }
+    .leftSection .btn{
+        padding: 12px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        background: #1e2167;
+
+    }
+    .rightSection img{
+        height: 311px;
+        width: 247px;             
+        margin: 50px 0;
+        border-radius: 50%;
+        border: 3px solid #1e2167;
+        
+    }
+
+   </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <label class="logo">TWIKIN</label>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">Feature </a>
+                <ul>
+                    <li><a href="SMS.html">Learning</a></li>
+                    <li><a href="SMS.html">Resources</a></li>
+                    <li><a href="SMS.html">Practice</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Gallery </a>
+                <ul>
+                    <li><a href="y200.html">2000</a></li>
+                    <li><a href="y200.html">2001</a></li>
+                    <li><a href="y200.html">2002</a></li>
+                </ul>
+            </li>
+            <li ><a href="price.html">Price&Plan</a></li>
+            <li ><a href="team.html">Our Team</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Clean & Fully Modern Design</h1>
+        <br>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing!</h3>
+        <br>
+        <button style="background-color: rgb(0, 136, 255); color: whitesmoke;">Live Demo</button>
+        
+        <button style="background-color:white;color:rgb(8, 144, 217);">Get Now</button>
+    </div>
+    <section class="FirstSection">
+        <div class="leftSection">
+            Hii, My name is <span style="color:white">Heneya</span> 
+            <div>and I am Working</div> 
+            <span id="element"></span>
+            <div>
+            <button class="btn">Download Source </button>
+            <button class="btn">Visit Us</button>
+        </div>
+    </div>
+        <div class="rightSection">
+            <img src="bg.png" alt="">
+        </div>
+        
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [" With TWIKIN."],
+          typeSpeed: 50,
+        });
+      </script>
+
+</body>
+</html>

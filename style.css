@@ -1,0 +1,93 @@
+*{
+margin: 0px;
+padding: 0px;
+list-style: none;
+box-sizing: border-box;
+}
+body{
+    background-image: url(background1.png);
+}
+nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-right: 350px;
+  }
+  nav{
+    height: 70px;
+    background: #076f9f;
+    box-shadow: 0 3px 15px rgba(6, 106, 238, 0.475);
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 3px 35px;
+    line-height: 55px;
+    font-size: 17px;
+    transition: .5s;
+  }
+  .active{
+    background-color: #d8f2f2;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #061466;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #d8f2f2;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 180px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #e5ecef;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  
+.content{
+text-align: center; 
+padding: 100px 20px;
+color: white;
+}
+button{
+border-radius: 5px;
+border: none;
+padding: 15px 32px;
+text-align: center;
+margin: 10px;
+font-size: 18px;
+margin: 4px 2px;
+cursor: pointer;
+}
